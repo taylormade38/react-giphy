@@ -33,14 +33,14 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div className="left-scene">
+      <div className="row">
+        <div className="col left-scene">
           <SearchBar searchFunction={this.search} />
           <div className="selected-gif">
             <Gif id={this.state.selectedGifId} />
           </div>
         </div>
-        <div className="right-scene">
+        <div className="col right-scene">
           <GifList gifs={this.state.gifs} />
         </div>
       </div>
